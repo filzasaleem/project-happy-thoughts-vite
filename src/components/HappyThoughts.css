@@ -1,0 +1,161 @@
+html,
+body {
+  width: 100%;
+}
+
+.thoughtsContainer {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: stretch;
+  max-width: 600px;
+
+  /* width: 50%;
+  padding-left: 30%;
+  padding-right: 30%; */
+ 
+}
+.wrtieThoughts {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  border: solid black;
+  background-color: #ebebeb;
+ 
+
+  max-width: 50%;
+  height: 300px;
+  box-shadow: 5px 5px black;
+  padding-bottom: 1%;
+  overflow: hidden;
+}
+.fetchThoughts {
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.textareaWraper {
+  font-size: 18px;
+  width: 100%;
+  margin: 10px 0 2px;
+  background: white;
+  text-align: center;
+}
+.formSections {
+  display: flex;
+  /* justify-content: space-between; */
+
+  margin: 0 10px 20px;
+  padding: 0;
+  gap: 25px;
+}
+.likeButton {
+   
+  padding-bottom: 10px;
+  border-radius: 50%;
+  border: none;
+  
+  cursor: pointer;
+  animation: pulse-small 2s infinite;
+}
+
+  
+  
+  
+.formButton {
+  background-color: #ffb7d2;
+  border-radius: 25px;
+  padding: 5px 10px;
+  margin: 0 0 5px;
+  border: none;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.emoji {
+  font-size: 24px;
+  
+}
+.errorSection {
+  flex: 1;
+  color: red; /* Style the error message as needed */
+}
+
+.characterCount {
+  text-align: right;
+ 
+
+}
+.timeinfo{
+    color: gray;
+}
+
+.thoughtBox {
+  border: solid black;
+  margin-top: 4%;
+
+  padding: 0 2% 2% 2%;
+  box-shadow: 5px 5px black;
+}
+.likes-and-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+@media (max-width: 576px) {
+  .thoughtsContainer {
+    max-width: 80%;
+    padding: 10px;
+  }
+
+  .wrtieThoughts {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .textareaWraper {
+    width: 100%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 992px) {
+  .thoughtsContainer {
+    max-width: 80%;
+    padding: 20px;
+  }
+
+  .wrtieThoughts {
+    max-width: 100%;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 993px) {
+  .thoughtsContainer {
+    width: 50%;
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+
+  .wrtieThoughts {
+    max-width: 600px;
+    height: 200px;
+    box-shadow: 5px 5px black;
+  }
+
+  .textareaWraper {
+    width: 100%;
+  }
+}

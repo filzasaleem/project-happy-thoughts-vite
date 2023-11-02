@@ -1,0 +1,15 @@
+.header{
+    text-align: center;
+    /* background-image: linear-gradient(45deg, #FF5733, #FFC300, #4CAF50, #337DFF); */
+    background: -webkit-linear-gradient(45deg,#ff199f,#cd8cdd,#5be288,#bef146,#7e6ed8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 25px;
+    color: transparent;
+    text-fill-color: transparent;
+    font-family: Abril Fatface;
+    
+    font-weight: 800;
+    margin: 3%;
+    
+  }
