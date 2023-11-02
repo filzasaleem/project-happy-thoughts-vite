@@ -55,7 +55,7 @@ export const WriteThought = ({ updateThoughts }) => {
 
   return (
     <>
-      <form onSubmit={handleFormSubmit}>
+      <form className ="writeForm" onSubmit={handleFormSubmit}>
         <div className="textareaWraper">
           <textarea
             rows={4}

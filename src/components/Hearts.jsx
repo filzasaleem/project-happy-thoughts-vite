@@ -47,7 +47,7 @@ export const Hearts = ({ id, hearts }) => {
           ❤️
         </span>
       </button>
-      x {heartsCount}
+       x {heartsCount}
     </>
   );
 };

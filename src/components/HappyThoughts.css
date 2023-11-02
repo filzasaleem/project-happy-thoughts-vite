@@ -14,7 +14,6 @@ body {
   /* width: 50%;
   padding-left: 30%;
   padding-right: 30%; */
- 
 }
 .wrtieThoughts {
   display: flex;
@@ -24,7 +23,6 @@ body {
   align-items: stretch;
   border: solid black;
   background-color: #ebebeb;
- 
 
   max-width: 50%;
   height: 300px;
@@ -33,15 +31,18 @@ body {
   overflow: hidden;
 }
 .fetchThoughts {
-
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: stretch;
 }
+textarea{
+    width: fit-content;
+}
 
 .textareaWraper {
+    
   font-size: 18px;
   width: 100%;
   margin: 10px 0 2px;
@@ -53,10 +54,10 @@ body {
   /* justify-content: space-between; */
 
   margin: 0 10px 20px;
-  padding: 0;
+
   gap: 25px;
 }
-.likeButton {
+/* .likeButton {
    
   padding-bottom: 10px;
   border-radius: 50%;
@@ -64,11 +65,24 @@ body {
   
   cursor: pointer;
   animation: pulse-small 2s infinite;
+} */
+
+.likeButton {
+  display: flex; /* Use flexbox */
+  /* align-items: start; 
+    flex-direction: row;
+    justify-content: center;  */
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  animation: pulse-small 2s infinite;
+}
+.likeinfo {
+  display: flex;
+  align-items: center;
 }
 
-  
-  
-  
 .formButton {
   background-color: #ffb7d2;
   border-radius: 25px;
@@ -84,7 +98,6 @@ body {
 }
 .emoji {
   font-size: 24px;
-  
 }
 .errorSection {
   flex: 1;
@@ -93,11 +106,9 @@ body {
 
 .characterCount {
   text-align: right;
- 
-
 }
-.timeinfo{
-    color: gray;
+.timeinfo {
+  color: gray;
 }
 
 .thoughtBox {
@@ -112,7 +123,6 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
 
 @media (max-width: 576px) {
   .thoughtsContainer {

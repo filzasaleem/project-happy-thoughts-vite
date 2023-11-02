@@ -1,4 +1,5 @@
 import { Hearts } from "./Hearts";
+
 export const DisplayThoughts = ({ allThoughts }) => {
   function calculateTimeAgo(timestamp) {
     const now = new Date();
@@ -27,7 +28,7 @@ export const DisplayThoughts = ({ allThoughts }) => {
         <div key={thought._id} className="thoughtBox">
           <p className="message">{thought.message}</p>
           <section className="likes-and-date">
-          <section>
+          <section className="likeinfo">
             <Hearts id={thought._id} hearts={thought.hearts} />
           </section>
           <section className="timeinfo">Created {calculateTimeAgo(thought.createdAt)}</section>
