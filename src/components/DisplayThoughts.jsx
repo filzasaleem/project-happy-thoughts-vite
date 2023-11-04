@@ -27,11 +27,11 @@ export const DisplayThoughts = ({ allThoughts }) => {
       {allThoughts.map((thought) => (
         <div key={thought._id} className="thoughtBox">
           <p className="message">{thought.message}</p>
-          <section className="likes-and-date">
-          <section className="likeinfo">
+          <section className="likesAndDate">
+          <section className="likeInfo">
             <Hearts id={thought._id} hearts={thought.hearts} />
           </section>
-          <section className="timeinfo">Created {calculateTimeAgo(thought.createdAt)}</section>
+          <section className="timeInfo">Created {calculateTimeAgo(thought.createdAt)}</section>
           </section>
         </div>
       ))}

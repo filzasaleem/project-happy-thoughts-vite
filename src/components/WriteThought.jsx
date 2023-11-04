@@ -55,7 +55,8 @@ export const WriteThought = ({ updateThoughts }) => {
 
   return (
     <>
-      <form className ="writeForm" onSubmit={handleFormSubmit}>
+    <h2 className="writeFormHeading">What is making you happy right now!!</h2>
+      <form className="writeForm" onSubmit={handleFormSubmit}>
         <div className="textareaWraper">
           <textarea
             rows={4}
@@ -69,7 +70,10 @@ export const WriteThought = ({ updateThoughts }) => {
           style={{ justifyContent: error ? "space-between" : "flex-end" }}
         >
           {error && <section className="errorSection">{error}</section>}
-          <section className="characterCount" style={{ color: text.length > 100 ? "red" : "inherit" }}>
+          <section
+            className="characterCount"
+            style={{ color: text.length > maxCharacters-30 ? "red" : "inherit" }}
+          >
             {text.length}/{maxCharacters}
           </section>
         </div>
