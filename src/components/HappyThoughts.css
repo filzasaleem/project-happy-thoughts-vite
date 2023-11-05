@@ -1,11 +1,10 @@
 html,
 body {
   width: 100%;
-  
 }
 .header {
   text-align: center;
-  
+
   background: -webkit-linear-gradient(
     45deg,
     #ff199f,
@@ -35,7 +34,6 @@ body {
 .thoughtsContainer {
   display: flex;
   flex-direction: column;
-
   justify-content: center;
   align-items: stretch;
   max-width: 600px;
@@ -43,12 +41,10 @@ body {
 .wrtieThoughts {
   display: flex;
   flex-wrap: wrap;
-
   justify-content: center;
   align-items: stretch;
   border: solid black;
   background-color: #ebebeb;
-
   max-width: 50%;
   box-shadow: 5px 5px black;
   padding-bottom: 1%;
@@ -70,20 +66,14 @@ textarea {
 
 .textareaWraper {
   font-size: 18px;
-
   margin: 10px 0 2px;
-
   text-align: center;
 }
 .formSections {
   display: flex;
-
   margin: 0 10px 20px;
-
   gap: 25px;
 }
-
-
 
 .formButton {
   background-color: #ffb7d2;

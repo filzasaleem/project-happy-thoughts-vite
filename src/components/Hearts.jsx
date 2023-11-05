@@ -28,14 +28,12 @@ export const Hearts = ({ id, hearts }) => {
       })
       .then((data) => {
         setHeartsCount((previous) => previous + 1);
-        setButtonBackground("#ee8bb4"); // Change background color
+        setButtonBackground("#ee8bb4"); 
       })
       .catch((error) => {
         console.error("Request error:", error);
-        // Handle other errors here
       });
   };
-
   return (
     <>
       <button
