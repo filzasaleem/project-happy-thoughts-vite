@@ -35,10 +35,10 @@ body {
 }
 
 .thoughtsContainer {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   max-width: 600px;
   margin: 3%;
   padding-left: 3%;
