@@ -28,7 +28,7 @@ body {
   padding-right: 3%;
 }
  .app {
-  border: solid red;
+
  
   display: flex;
   text-align: center;
@@ -41,7 +41,7 @@ body {
   margin: 3%;
   padding-left: 3%;
   padding-right: 3%;
-  border: solid blue;
+
 
 }
 .wrtieThoughts {
@@ -61,7 +61,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: stretch;
-  border: solid #7e6ed8;
   max-width: 100%; 
   padding: 10px;
   box-sizing: border-box; 
@@ -74,6 +73,9 @@ body {
   box-shadow: 5px 5px black;
   max-width: 100%; 
   box-sizing: border-box;
+
+  word-wrap: break-word;
+  white-space: normal;
 }
 
 
