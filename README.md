@@ -35,3 +35,6 @@ Every project should be deployed somewhere. Be sure to include the link to the d
   </a>
 
 # deployed project
+https://filzas-happy-thoughts-project.netlify.app/
+
+I have done the project alone.
