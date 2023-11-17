@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 
 export const FetchThoughts = ({ newThought }) => {
   const url = "https://happy-thoughts-ux7hkzgmwa-uc.a.run.app/thoughts";
-
   const [allThoughts, setAllThoughts] = useState(null);
 
   useEffect(() => {

@@ -4,9 +4,7 @@ export const WriteThought = ({ updateThoughts }) => {
   const url = "https://happy-thoughts-ux7hkzgmwa-uc.a.run.app/thoughts";
   const [text, setText] = useState("");
   const [error, setError] = useState(null);
-
   const maxCharacters = 140;
-
   const handleChange = (event) => {
     const inputText = event.target.value;
 
@@ -14,7 +12,6 @@ export const WriteThought = ({ updateThoughts }) => {
       setText(inputText);
     }
   };
-
   const sendThought = () => {
     fetch(url, {
       method: "POST",
@@ -38,7 +35,6 @@ export const WriteThought = ({ updateThoughts }) => {
         setText("");
       });
   };
-
   const handleFormSubmit = (event) => {
     event.preventDefault();
     if (text.length === 0) {
@@ -52,7 +48,6 @@ export const WriteThought = ({ updateThoughts }) => {
       setError(null);
     }
   };
-
   return (
     <>
       <h2 className="writeFormHeading">What is making you happy right now!!</h2>

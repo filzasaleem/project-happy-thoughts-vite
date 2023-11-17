@@ -3,12 +3,8 @@ import { useState } from "react";
 export const Hearts = ({ id, hearts }) => {
   const [heartsCount, setHeartsCount] = useState(hearts);
   const [buttonBackground, setButtonBackground] = useState("#d1d1d1"); // Initial background color
-
   const url = `https://happy-thoughts-ux7hkzgmwa-uc.a.run.app/thoughts/${id}/like`;
-
   const handleHearts = () => {
-    console.log("url is", url);
-
     fetch(url, {
       method: "POST",
       headers: {
@@ -22,7 +18,6 @@ export const Hearts = ({ id, hearts }) => {
             response.status,
             response.statusText
           );
-          // Handle error response here
         }
         return response.json();
       })

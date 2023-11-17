@@ -5,7 +5,6 @@ export const DisplayThoughts = ({ allThoughts }) => {
     const now = new Date();
     const createdAt = new Date(timestamp);
     const timeDifference = now - createdAt;
-
     // Calculate time in minutes, hours, and days
     const minutesAgo = Math.floor(timeDifference / (1000 * 60));
     const hoursAgo = Math.floor(timeDifference / (1000 * 60 * 60));
@@ -28,13 +27,15 @@ export const DisplayThoughts = ({ allThoughts }) => {
         <div key={thought._id} className="thoughtBox">
           <p className="message">{thought.message}</p>
           <section className="likesAndDate">
-          <section className="likeInfo">
-            <Hearts id={thought._id} hearts={thought.hearts} />
-          </section>
-          <section className="timeInfo">Created {calculateTimeAgo(thought.createdAt)}</section>
+            <section className="likeInfo">
+              <Hearts id={thought._id} hearts={thought.hearts} />
+            </section>
+            <section className="timeInfo">
+              Created {calculateTimeAgo(thought.createdAt)}
+            </section>
           </section>
         </div>
       ))}
-   </>
+    </>
   );
 };
