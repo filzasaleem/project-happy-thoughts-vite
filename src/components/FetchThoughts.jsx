@@ -26,8 +26,6 @@ export const FetchThoughts = ({ newThought }) => {
     }
   }, [newThought]);
 
-  console.log(allThoughts);
-
   return (
     <>
       {allThoughts ? (

@@ -55,7 +55,7 @@ export const WriteThought = ({ updateThoughts }) => {
 
   return (
     <>
-    <h2 className="writeFormHeading">What is making you happy right now!!</h2>
+      <h2 className="writeFormHeading">What is making you happy right now!!</h2>
       <form className="writeForm" onSubmit={handleFormSubmit}>
         <div className="textareaWraper">
           <textarea
@@ -72,7 +72,9 @@ export const WriteThought = ({ updateThoughts }) => {
           {error && <section className="errorSection">{error}</section>}
           <section
             className="characterCount"
-            style={{ color: text.length > maxCharacters-30 ? "red" : "inherit" }}
+            style={{
+              color: text.length > maxCharacters - 30 ? "red" : "inherit",
+            }}
           >
             {text.length}/{maxCharacters}
           </section>

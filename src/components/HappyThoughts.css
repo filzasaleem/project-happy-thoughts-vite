@@ -1,12 +1,12 @@
 html,
 body {
   width: 100%;
- 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header {
   text-align: center;
- 
-
   background: -webkit-linear-gradient(
     45deg,
     #ff199f,
@@ -19,31 +19,24 @@ body {
   background-clip: text;
   font-size: 25px;
   color: transparent;
-  text-fill-color: transparent;
   font-family: Abril Fatface;
-
   font-weight: 800;
   margin: 3%;
   padding-left: 3%;
   padding-right: 3%;
 }
- .app {
-
- 
-  display: flex;
-  text-align: center;
-  justify-content: center;
-} 
 
 .thoughtsContainer {
-
   max-width: 600px;
   margin: 3%;
   padding-left: 3%;
   padding-right: 3%;
-
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
+
 .wrtieThoughts {
   display: flex;
   flex-wrap: wrap;
@@ -61,23 +54,21 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: stretch;
-  max-width: 100%; 
+  max-width: 100%;
   padding: 10px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 .thoughtBox {
   border: solid black;
   margin-top: 4%;
-  padding: 10px; 
+  padding: 10px;
   box-shadow: 5px 5px black;
-  max-width: 100%; 
+  max-width: 100%;
   box-sizing: border-box;
-
   word-wrap: break-word;
   white-space: normal;
 }
-
 
 textarea {
   padding: 10px;
@@ -110,22 +101,24 @@ textarea {
   gap: 5px;
   cursor: pointer;
 }
+
 .emoji {
   font-size: 24px;
 }
+
 .errorSection {
   flex: 1;
-  /* color: palevioletred; */
   color: #ee8bb4;
-  /* "#ee8bb4"; */
 }
 
 .characterCount {
   text-align: right;
 }
+
 .timeInfo {
   color: gray;
 }
+
 .likeButton {
   display: flex;
 
@@ -133,13 +126,12 @@ textarea {
   border-radius: 50%;
   border: none;
   cursor: pointer;
- 
 }
+
 .likeInfo {
   display: flex;
   align-items: center;
 }
-
 
 .likesAndDate {
   display: flex;
@@ -149,8 +141,7 @@ textarea {
 
 @media (max-width: 576px) {
   .thoughtsContainer {
-    max-width: 80%;
-    padding-left : 4%;
+    max-width: 300px;
   }
 
   .wrtieThoughts {
@@ -166,8 +157,7 @@ textarea {
 
 @media (min-width: 577px) and (max-width: 992px) {
   .thoughtsContainer {
-    max-width: 80%;
-    padding-left : 6%;
+    max-width: 500px;
   }
 
   .wrtieThoughts {
@@ -181,12 +171,6 @@ textarea {
 }
 
 @media (min-width: 993px) {
-  .thoughtsContainer {
-    width: 50%;
-    padding-left: 30%;
-    padding-right: 30%;
-  }
-
   .wrtieThoughts {
     max-width: 100%;
     height: 300px;
@@ -198,5 +182,3 @@ textarea {
     padding: 10px;
   }
 }
-
-
