@@ -1,12 +1,7 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/happy-thoughts.svg" alt="Project Banner Image">
-  </a>
-</h1>
 
-# Unhappy thoughts Project
+# Happy thoughts Project
 
-In this week's project, you'll be able to practice your React state skills by fetching and posting data to an API.
+In this week's project, the main focus was to practice React state skills by fetching and posting data to an API. Rect hook useEffect() was used.
 
 ## Getting Started with the Project
 
@@ -20,13 +15,19 @@ The command below is a combination of installing dependencies, opening up the pr
 npm i && code . && npm run dev
 ```
 
-### The Problem
+## The Challange
+The app allows users to share their thoughts, with each shared thought being added to the top of the existing thoughts. Users can also express their approval by liking others' thoughts. For a visual touch, the background color of the like button changes when it is liked.
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+## Technologies used
+1. React components
+2. React hooks useEffect() and useState()
+3. API enpint
+4. GET and POST requests are used in the fetch operation.
+5. postman for validating api requests
+
 
 ### View it live
-
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Explore the happy Thoughts Project live: [Happy-thoughts](https://filzas-happy-thoughts-project.netlify.app/)
 
 ## Instructions
 
@@ -34,7 +35,3 @@ Every project should be deployed somewhere. Be sure to include the link to the d
    See instructions of this project
   </a>
 
-# deployed project
-https://filzas-happy-thoughts-project.netlify.app/
-
-I have done the project alone.
